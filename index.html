@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Note List Builder</title>
+    <link rel="stylesheet" href="./css/app.css" />
+  </head>
+  <body>
+    <main id="app">
+      <div class="container">
+        <div class="row justify-content-center mt-5">
+          <div class="col-12 col-md-8 col-lg-4 border border-4 border-dark p-3">
+            <h3 class="mb-2">Note List Builder</h3>
+            <form action="" id="newForm">
+              <div class="input-group">
+                <input
+                  type="text"
+                  id="note"
+                  class="form-control form-control-lg border border-black"
+                />
+                <button class="btn btn-primary btn-lg">
+                  <i class="bi bi-plus"></i>
+                </button>
+              </div>
+            </form>
+
+            <div class="d-flex justify-content-between mt-3 align-items-center ">
+              <h4>Your List</h4>
+              <h4 class="p-2 badge rounded-pill bg-primary">
+                Done ( <span id="countdone">0</span>/
+                <span id="countlist">0</span>)
+              </h4>
+            </div>
+            <div class="lists">
+              <div class="empty-list my-5">
+                <div
+                  class="d-flex flex-column align-items-center mt-3 mb-3 animate__animated animate__tada"
+                >
+                  <img
+                    src="./img/undraw_personal_notebook_re_d7dc.svg"
+                    alt=""
+                    width="120"
+                  />
+                  <span class="mt-2">There is no note list</span>
+                </div>
+              </div>
+            </div>
+            <button class="btn btn-primary w-100" id="alldone">ALL DONE</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
